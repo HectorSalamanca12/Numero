@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo de Adivinhação Interativo</title>
+
+
+<link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Advinhe o Número (1 a 10)</h1>
+        <input type="number" id="palpite" min="1" max="10" placeholder="1-10">
+        <div class="botoes">
+            <button id="chutarBtn" onclick="verificarPalpite()">Chutar</button>
+            <button id="recomecarBtn" onclick="recomecarJogo()">Recomeçar</button>
+        </div>
+        <div id="mensagem"></div>
+    </div>
+
+
+<script src="java/java.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        background: conic-gradient(green, yellow, blue, green);
+    }
+
+    /* Card central branco */
+    .card {
+        position: relative;
+        background-color: #ffffff; /* branco garantido */
+        padding: 30px 40px;
+        border-radius: 15px;
+        text-align: center;
+        min-width: 300px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        z-index: 2; /* acima do fundo e confetes */
+    }
+
+    /* Borda colorida do card */
+ 
+    
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    input[type="number"] {
+        padding: 10px;
+        font-size: 18px;
+        width: 70px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    .botoes {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    #chutarBtn {
+        background-color: #4CAF50;
+        color: white;
+    }
+    #chutarBtn:hover {
+        background-color: #45a049;
+    }
+
+    #recomecarBtn {
+        background-color: #2196F3;
+        color: white;
+    }
+    #recomecarBtn:hover {
+        background-color: #0b7dda;
+    }
+
+    #mensagem {
+        font-size: 20px;
+        font-weight: bold;
+        min-height: 30px;
+    }
+
+    /* Confetes redondos */
+    .confete {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%; /* confetes redondos */
+        opacity: 0.8;
+        top: -10px;
+        z-index: 0; /* atrás do card */
+        animation: cair linear infinite;
+    }
+
+    @keyframes cair {
+        0% { transform: translateY(0) rotate(0deg); }
+        100% { transform: translateY(100vh) rotate(360deg); }
+    }
